@@ -1,0 +1,20 @@
+.card {
+  border: none !important;
+  border-radius: 10px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+.card:hover {
+  background-color: white;
+  box-shadow: 5px 5px 10px lightgray;
+}
+
+.container {
+  padding-top: 0px;
+}
+
+.card-body img {
+  margin-right: 5px;
+  width: 40px;
+  height: 40px;
+}

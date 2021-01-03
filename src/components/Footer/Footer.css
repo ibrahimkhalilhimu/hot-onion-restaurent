@@ -1,0 +1,10 @@
+.lastPart {
+  background-color: black !important;
+}
+.row img {
+  width: 200px;
+}
+.list li {
+  color: white;
+  list-style: none;
+}

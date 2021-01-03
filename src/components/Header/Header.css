@@ -1,0 +1,23 @@
+.navItem{
+margin-right: 20px;
+color:black !important;
+
+
+}
+.navbar-brand img{
+    width: 200px;
+}
+
+/* .navBar{
+    background-color: white;
+  margin-left: 25px;
+  margin-right: 15px;
+} */
+#signIn{
+  background-color: red;
+  color: white !important;
+  border:1px solid red;
+  border-radius: 25px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
