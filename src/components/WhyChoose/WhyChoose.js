@@ -6,6 +6,8 @@ import image3 from '../../Image/architecture-building-city-2047397.png'
 import group204 from '../../ICON/Group 204.png'
 import group1133 from '../../ICON/Group 1133.png'
 import group245 from '../../ICON/Group 245.png'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faArrowRight } from '@fortawesome/free-solid-svg-icons'
 
 const WhyChoose = () => {
     return (
@@ -22,7 +24,8 @@ const WhyChoose = () => {
       <div>
       <h5 className="card-title">First Delevery</h5>
       <p className="card-text">Keep your systems in sync with aulomated web hook based notification each time link id paid and how we dreams about our future.</p>
-      <b style={{color:"blue"}}>See more</b>
+      <b style={{color:"blue"}}>See more  <FontAwesomeIcon icon={faArrowRight}
+      /> </b>
       </div>
     </div>
   </div>
@@ -33,7 +36,8 @@ const WhyChoose = () => {
       <div>
       <h5 className="card-title">A Good Auto Respnder</h5>
       <p className="card-text">Keep your systems in sync with aulomated web hook based notification each time link id paid and how we dreams about our future.</p>
-      <b style={{color:"blue"}}>See more</b>
+      <b style={{color:"blue"}}>See more <FontAwesomeIcon icon={faArrowRight}
+      /></b>
       </div>
     </div>
   </div>
@@ -44,7 +48,8 @@ const WhyChoose = () => {
       <div>
       <h5 className="card-title">Home Delevery</h5>
       <p className="card-text">Keep your systems in sync with aulomated web hook based notification each time link id paid and how we dreams about our future.</p>
-      <b style={{color:"blue"}}>See more</b>
+      <b style={{color:"blue"}}>See more <FontAwesomeIcon icon={faArrowRight}
+      /></b>
       </div>
     </div>
   </div>

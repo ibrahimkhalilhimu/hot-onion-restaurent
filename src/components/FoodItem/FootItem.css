@@ -1,6 +1,7 @@
 .btn {
   border: none;
   background-color: white;
+  outline: none !important;
 }
 
 #checkOut {
@@ -22,5 +23,6 @@
 .active {
   background-color: white;
   color: red !important;
-  border-bottom: 1px solid red !important;
+  border-bottom: 2px solid red !important;
+  outline: none !important;
 }

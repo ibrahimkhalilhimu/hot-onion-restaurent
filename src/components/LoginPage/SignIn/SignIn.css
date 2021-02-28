@@ -1,0 +1,20 @@
+.login img {
+  padding-top: 50px;
+  width: 200px;
+}
+#input {
+  border: 1px solid rgb(162, 163, 158);
+  border-radius: 5px;
+  width: 400px;
+  height: 40px;
+  padding: 0 15px;
+  background-color: rgb(241, 241, 241);
+}
+.submitBtn {
+  background-color: red;
+  border: 1px solid red;
+  border-radius: 5px;
+  width: 400px;
+  height: 40px;
+  color: white;
+}

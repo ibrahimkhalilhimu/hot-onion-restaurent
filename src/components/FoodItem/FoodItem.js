@@ -30,10 +30,7 @@ const [food,setFood]=useState([])
        </button >
        <button onClick={()=>setCatagory('Lunch')} className={catagory === 'Lunch' ? 'active btn' : 'btn'} >Lunch</button>
         <button onClick={()=>setCatagory('Dinner')} className={catagory === 'Dinner' ? 'active btn' : 'btn'}>Dinner</button>
-      
-       
-       
-      
+         
    </div>
    <div className="row pt-5 ">
    {

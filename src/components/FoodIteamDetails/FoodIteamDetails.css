@@ -1,0 +1,17 @@
+.btnSide {
+  border: 1px solid red;
+  border-radius: 25px;
+  width: 150px;
+  text-align: center;
+}
+.plus {
+  size: 50px !important;
+  margin-left: 19px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+.minus {
+  margin-top: 10px;
+  margin-right: 19px;
+  cursor: pointer;
+}

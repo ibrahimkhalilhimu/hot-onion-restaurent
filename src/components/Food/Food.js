@@ -11,7 +11,7 @@ const Food = (props) => {
     return (
     <div onClick={()=>handleClick(id)} className="col-md-4 ">
 <div className="card align-items-center pt-5">
-     <img style={{width:"100px"}} className="card-img-top img-fluid" src={img} alt="Card image cap"/>
+     <img style={{width:"100px"}} className="card-img-top img-fluid" src={img} alt="image cannot support"/>
    <div className="card-body "> 
     <h4 className="text-center">{name}</h4>
     <p>{body}</p>
