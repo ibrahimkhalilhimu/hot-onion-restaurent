@@ -4,9 +4,6 @@ import FakeData from '../../fakeData/FakeData';
 
 
 const Banner = () => {
-    const [searchQuery , setSearchQuery] = React.useState(null)
-    const getQuery = e => setSearchQuery(e.target.value);
-    console.log(searchQuery);
     return (
         <div className='background'>
           <div className="bannerSide">
@@ -14,7 +11,7 @@ const Banner = () => {
               <div className="py-3">
                   <form>
              <input className="inputText" type="text"
-          id="query" onChange={getQuery}
+         
         placeholder="Search food items"/>
              <input className="inputBtn" type="submit" value="Search"/>
              </form>

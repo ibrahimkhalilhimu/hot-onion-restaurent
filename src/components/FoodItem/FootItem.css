@@ -1,8 +1,7 @@
-.btn {
+/* .btn {
   border: none;
-  background-color: white;
   outline: none !important;
-}
+} */
 
 #checkOut {
   margin-top: 20px;
@@ -16,7 +15,6 @@
   padding: 10px;
 }
 .disabled {
-  opacity: 0.6;
   cursor: not-allowed !important;
 }
 

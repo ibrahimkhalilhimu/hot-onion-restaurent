@@ -1,24 +1,25 @@
-.input{
-    width: 450px;
-    height: 45px;
-    border: 1px solid lightgray;
-    background-color:rgb(241, 241, 241);
-    border-radius: 5px;
-    padding-left: 10px;
+.checkOutCard img {
+  width: 100px;
 }
-hr{
-border-bottom: 2px solid gray;
+
+.cardItem {
+  display: flex;
+  background-color: antiquewhite;
+  height: 110px;
+  border-radius: 10px;
 }
-#textSide{
-    padding-left: 300px;
-    padding-top: 30px;
+.cardItem img {
+  width: 90px;
+  height: 90px;
+  margin: 10px;
 }
-.submit-btn{
-    width: 450px;
-    height: 45px;
-    border: 1px solid lightgray;
-    background-color: red;
-    color: white;
-    border-radius: 5px;
-    padding-left: 10px;
+.cardText {
+  margin: 23px;
+}
+.cardItem .count {
+  margin: 23px;
+}
+.checkOutCard {
+  overflow-y: auto;
+  height: 200px;
 }

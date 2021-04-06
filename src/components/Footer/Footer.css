@@ -8,3 +8,9 @@
   color: white;
   list-style: none;
 }
+@media screen and (max-width: 462px) {
+  .lastPart {
+    background-color: black !important;
+    width: 100vw;
+  }
+}

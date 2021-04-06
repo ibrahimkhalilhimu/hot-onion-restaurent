@@ -16,48 +16,42 @@ import Location from './components/Location/Location';
 import Footer from './components/Footer/Footer';
 import { useState } from 'react';
 import fakeData from './fakeData/FakeData'
+import { createContext } from 'react';
 
+export const userContext = createContext()
 
 function App() {
-
-  const [cart,setCart] = useState([])
-const handleProduct =(id)=>{
-const product = fakeData.filter(pd=>pd.id ===id)
-const newCart = {cart:[...cart,product]}
-console.log(newCart);
-setCart(newCart);
-}
+  const [catagory,setCatagory] = useState('Lunch')
+  const [food,setFood]=useState([])
+  const [cart,setCart]=useState([])
+  const [fromData,setFromData] = useState({})
+ 
   return (
     <div >
-      
+       <userContext.Provider value={{catagoryName:[catagory,setCatagory],foodItem:[food,setFood],cartItem:[cart,setCart],formDataAll:[fromData,setFromData]}}>
       <Router>
+        <Header />
         <Switch>
           <Route path="/home">
           <Home></Home>
           </Route>
           <Route path="/logIn">
-            <Header/>
             <LogIn></LogIn>
           </Route>
           <Route path="/signIn">
-          <Header/>
             <SignIn></SignIn>
           </Route>
           <Route path="/delivery">
-          <Header/>
             <Delivery></Delivery>
           </Route>
-          <Header/>
           <Route path="/location">
             <Location/>
           </Route>
           <Route path="/:id">
-          <Header cart={cart}/>
-            <FoodIteamDetails cart={cart} handleProduct={handleProduct}/>
+            <FoodIteamDetails/>
           </Route>
           <Route exact path="/">
-            <Header/>
-            <Home></Home>
+            <Home/>
           </Route>
          <Route path="*">
             <NoMatch/>
@@ -65,7 +59,7 @@ setCart(newCart);
         </Switch>
         <Footer/>
       </Router>
-      
+      </userContext.Provider>
     </div>
   );
 }

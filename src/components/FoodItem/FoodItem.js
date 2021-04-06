@@ -1,4 +1,6 @@
-import React, { createContext, useContext, useEffect, useState } from 'react';
+import React, {  useContext, useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
+import { userContext } from '../../App';
 import FakeData from '../../fakeData/FakeData';
 import Food from '../Food/Food';
 import './FootItem.css'
@@ -6,21 +8,22 @@ import './FootItem.css'
 
 const FoodItem = () => {
 
-
-const [catagory,setCatagory] = useState('Lunch')
-const [food,setFood]=useState([])
-
-
-
+const {catagoryName,foodItem,cartItem} = useContext(userContext)
+const [catagory,setCatagory] = catagoryName
+const [food,setFood]= foodItem
+const [cart,setCart]= cartItem
+const [disabled,setDisabled]= useState(true)
     useEffect(()=>{
-       
         const matchFood = FakeData.filter(pd=>pd.Catagory === catagory)
         setFood(matchFood)
-       
     },[catagory])
 
+ useEffect(()=>{
+     if (cart.length>0) {
+         setDisabled(false)
+     }
+ },[cart])
  
-    
     return (
       
         <div className="container py-5">
@@ -41,7 +44,12 @@ const [food,setFood]=useState([])
    </div>
 
    <div id="checkOut">
-    <button className="disabled" >Checkout Your Food</button>
+   
+    <Link to="/delivery">
+    <button 
+    className={disabled?"disabled":"btn btn-primary"}
+     disabled={disabled}>Checkout Your Food</button>
+    </Link>
     </div>
    </div>
                   

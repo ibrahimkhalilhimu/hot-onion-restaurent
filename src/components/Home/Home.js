@@ -8,7 +8,7 @@ import WhyChoose from '../WhyChoose/WhyChoose';
 const Home = () => {
     return (
         <div>
-           <Header/>
+           {/* <Header/> */}
             <Banner></Banner>
             <FoodItem></FoodItem>
             <WhyChoose></WhyChoose>

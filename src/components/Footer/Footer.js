@@ -5,14 +5,12 @@ import './Footer.css'
 const Footer = () => {
     return (
         <div className="lastPart pt-5 mt-5">
-            <div className="container py-5">
+            <div className="container  pt-5">
                 <div className="row">
-                    <div className="col-md-5" >
+                    <div className="col-md-6" >
                         <img  src={logo2} alt=""/>
                     </div>
-                    <div className="col-md-7">
-                    <div className="row">
-                        <div className="col-md-6">
+                    <div className="col-md-3">
                         <ul className="list">
                             <li>About Online food</li>
                             <li>Read our blog</li>
@@ -21,7 +19,7 @@ const Footer = () => {
                         </ul>
                         </div>
                       
-                            <div className="col-md-6">
+                            <div className="col-md-3">
                                 <ul className="list">
                                     <li>Get help</li>
                                     <li>Read FAQS</li>
@@ -29,28 +27,15 @@ const Footer = () => {
                                     <li>Restaurent near me</li>
                                 </ul>
                             </div>
-                        
                     </div>
-                    </div>
-                </div>
-                <div className="row text-white py-5">
-                    <div className="col-md-6 mt-5">
-                        <p>CopyRight 2020 online food</p>
-                    </div>
-                    
-                        <div className="col-md-6 mt-5">
-                        <div className="row pl-5">
-                            <div className="col-md-3">
-                                <p>Privacy polici</p>
-                            </div>
-                            <div className="col-md-3">
-                               <p>Team Of Use</p> 
-                            </div>
-                            <div className="col-md-3">
-                                <p>Pricing</p>
-                            </div>
-                        </div>
-                    </div>
+                    <div className="footer-bottom d-flex justify-content-between align-items-center">
+                    <small className="text-secondary">Copyright &copy;  2020 Online Food </small>
+                    <ul className="list-inline ">
+                        <li className="list-inline-item ml-3"><a href="" className="text-white">Privacy Policy.</a></li>
+                        <li className="list-inline-item  ml-3"><a href="" className="text-white">Terms of Use</a></li>
+                        <li className="list-inline-item  ml-3"><a href="" className="text-white">Pricing</a></li>
+                    </ul>
+
                 </div>
             </div>
         </div>

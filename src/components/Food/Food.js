@@ -2,7 +2,6 @@ import React from 'react';
 import {  useHistory } from 'react-router-dom';
 
 const Food = (props) => {
-    console.log(props.food);
     const {name,body,price,img,id} = props.food
     let history = useHistory();
     const handleClick =(id)=>{
